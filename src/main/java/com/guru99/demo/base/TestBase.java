@@ -14,8 +14,8 @@ import com.guru99.demo.utilities.PageWaitUtil;
 
 public class TestBase {
  
-	static WebDriver driver;
-    static Properties prop;
+	public static WebDriver driver;
+    public static Properties prop;
 	public TestBase() {
 		try {
 			prop= new Properties();
