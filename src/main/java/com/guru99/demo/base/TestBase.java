@@ -4,11 +4,13 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
-
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import com.guru99.demo.utilities.PageWaitUtil;
 
 public class TestBase {
  
@@ -38,6 +40,15 @@ public class TestBase {
 	    	System.setProperty("webdriver.gecko.driver", "/demoguru99pom/geckodriver.exe");
 	    	driver = new FirefoxDriver();
 	    }
+	    driver.manage().window().maximize();// auto maximizing windows according to screen size
+	    driver.manage() .deleteAllCookies();
+	    driver.manage() .timeouts().pageLoadTimeout(
+	    		PageWaitUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+	    driver.manage().timeouts().implicitlyWait(
+	    		PageWaitUtil.IMPLICIT_TIME, TimeUnit.SECONDS);
+	    
+	    driver.get(prop.getProperty("url"));
+	    
 	}
  
 }
