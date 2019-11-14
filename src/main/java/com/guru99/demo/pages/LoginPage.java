@@ -35,8 +35,9 @@ public class LoginPage extends TestBase {
 	public boolean validateLogoPresent() {
 		return logoImg.isDisplayed();
 	}
-	public void login(String eml, String pwd) {
+	public SuccessPage login(String eml, String pwd) {
 		email.sendKeys(eml);
 		password.sendKeys(pwd);
+		return new SuccessPage();//return object of SuccessPages 
 	}
 }
