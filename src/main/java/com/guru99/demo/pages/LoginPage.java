@@ -32,8 +32,11 @@ public class LoginPage extends TestBase {
 		return driver.getTitle();
 	   }
 	
-	public void validateLogoPresent() {
-		logoImg.isDisplayed();
+	public boolean validateLogoPresent() {
+		return logoImg.isDisplayed();
 	}
-	
+	public void login(String eml, String pwd) {
+		email.sendKeys(eml);
+		password.sendKeys(pwd);
+	}
 }
