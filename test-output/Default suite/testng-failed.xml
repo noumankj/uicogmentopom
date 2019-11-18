@@ -7,8 +7,6 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="loginLogoImageTest"/>
-          <include name="loginPageTitleTest"/>
           <include name="loginTest"/>
         </methods>
       </class> <!-- com.guru99.demo.pagestests.LoginPageTest -->

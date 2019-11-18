@@ -2,44 +2,44 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-11-15T00:01:23 PKT" name="Default suite" finished-at="2019-11-15T00:02:11 PKT" duration-ms="48034">
+  <suite started-at="2019-11-18T21:31:36 PKT" name="Default suite" finished-at="2019-11-18T21:32:28 PKT" duration-ms="51398">
     <groups>
     </groups>
-    <test started-at="2019-11-15T00:01:23 PKT" name="Default test" finished-at="2019-11-15T00:02:11 PKT" duration-ms="48034">
+    <test started-at="2019-11-18T21:31:36 PKT" name="Default test" finished-at="2019-11-18T21:32:28 PKT" duration-ms="51398">
       <class name="com.guru99.demo.pagestests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.guru99.demo.pagestests.LoginPageTest@28975c28]" started-at="2019-11-15T00:01:24 PKT" name="setUp" finished-at="2019-11-15T00:01:38 PKT" duration-ms="14085" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.guru99.demo.pagestests.LoginPageTest@3943a2be]" started-at="2019-11-18T21:31:36 PKT" name="setUp" finished-at="2019-11-18T21:31:53 PKT" duration-ms="16615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginLogoImageTest()[pri:0, instance:com.guru99.demo.pagestests.LoginPageTest@28975c28]" started-at="2019-11-15T00:01:38 PKT" name="loginLogoImageTest" finished-at="2019-11-15T00:01:38 PKT" duration-ms="326" status="PASS">
+        <test-method signature="loginLogoImageTest()[pri:0, instance:com.guru99.demo.pagestests.LoginPageTest@3943a2be]" started-at="2019-11-18T21:31:53 PKT" name="loginLogoImageTest" finished-at="2019-11-18T21:31:53 PKT" duration-ms="171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginLogoImageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99.demo.pagestests.LoginPageTest@28975c28]" started-at="2019-11-15T00:01:38 PKT" name="tearDown" finished-at="2019-11-15T00:01:39 PKT" duration-ms="1244" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99.demo.pagestests.LoginPageTest@3943a2be]" started-at="2019-11-18T21:31:53 PKT" name="tearDown" finished-at="2019-11-18T21:31:54 PKT" duration-ms="999" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.guru99.demo.pagestests.LoginPageTest@28975c28]" started-at="2019-11-15T00:01:39 PKT" name="setUp" finished-at="2019-11-15T00:01:57 PKT" duration-ms="18055" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.guru99.demo.pagestests.LoginPageTest@3943a2be]" started-at="2019-11-18T21:31:54 PKT" name="setUp" finished-at="2019-11-18T21:32:12 PKT" duration-ms="17352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPageTitleTest()[pri:0, instance:com.guru99.demo.pagestests.LoginPageTest@28975c28]" started-at="2019-11-15T00:01:57 PKT" name="loginPageTitleTest" finished-at="2019-11-15T00:01:57 PKT" duration-ms="21" status="PASS">
+        <test-method signature="loginPageTitleTest()[pri:0, instance:com.guru99.demo.pagestests.LoginPageTest@3943a2be]" started-at="2019-11-18T21:32:12 PKT" name="loginPageTitleTest" finished-at="2019-11-18T21:32:12 PKT" duration-ms="40" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99.demo.pagestests.LoginPageTest@28975c28]" started-at="2019-11-15T00:01:57 PKT" name="tearDown" finished-at="2019-11-15T00:01:59 PKT" duration-ms="1222" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99.demo.pagestests.LoginPageTest@3943a2be]" started-at="2019-11-18T21:32:12 PKT" name="tearDown" finished-at="2019-11-18T21:32:13 PKT" duration-ms="1015" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.guru99.demo.pagestests.LoginPageTest@28975c28]" started-at="2019-11-15T00:01:59 PKT" name="setUp" finished-at="2019-11-15T00:02:10 PKT" duration-ms="11372" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.guru99.demo.pagestests.LoginPageTest@3943a2be]" started-at="2019-11-18T21:32:13 PKT" name="setUp" finished-at="2019-11-18T21:32:26 PKT" duration-ms="12974" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTest()[pri:0, instance:com.guru99.demo.pagestests.LoginPageTest@28975c28]" started-at="2019-11-15T00:02:10 PKT" name="loginTest" finished-at="2019-11-15T00:02:11 PKT" duration-ms="601" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.guru99.demo.pagestests.LoginPageTest@3943a2be]" started-at="2019-11-18T21:32:26 PKT" name="loginTest" finished-at="2019-11-18T21:32:27 PKT" duration-ms="1037" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99.demo.pagestests.LoginPageTest@28975c28]" started-at="2019-11-15T00:02:11 PKT" name="tearDown" finished-at="2019-11-15T00:02:11 PKT" duration-ms="906" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.guru99.demo.pagestests.LoginPageTest@3943a2be]" started-at="2019-11-18T21:32:27 PKT" name="tearDown" finished-at="2019-11-18T21:32:28 PKT" duration-ms="1010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
