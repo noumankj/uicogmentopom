@@ -5,3 +5,11 @@
 *.ear
 # Class Files #
 *.class
+# Log Files #
+*.log
+# TestNG updated html and xml files#
+*.html
+*.png
+testng-results.xml
+LoginPageTest.xml
+Default test.xml
