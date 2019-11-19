@@ -1,17 +1,17 @@
-package com.guru99.demo.pagestests;
+package com.cogmento.ui.pagestests;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.guru99.demo.base.TestBase;
-import com.guru99.demo.pages.LoginPage;
-import com.guru99.demo.pages.SuccessPage;
+import com.cogmento.ui.base.TestBase;
+import com.cogmento.ui.pages.LoginPage;
+import com.cogmento.ui.pages.HomePage;
 
 public class LoginPageTest extends TestBase{
 	LoginPage loginPage;
-	SuccessPage successPage;
+	HomePage homePage;
 	public LoginPageTest() {
 		super(); // it will call the Base Class constructor to initiliaze properties
 	}
@@ -36,7 +36,7 @@ public class LoginPageTest extends TestBase{
 	
 	@Test()
 	public void loginTest() {
-		successPage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		homePage=loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
 	

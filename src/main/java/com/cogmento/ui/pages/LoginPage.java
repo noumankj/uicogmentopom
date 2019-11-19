@@ -1,10 +1,10 @@
-package com.guru99.demo.pages;
+package com.cogmento.ui.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.guru99.demo.base.TestBase;
+import com.cogmento.ui.base.TestBase;
 
 public class LoginPage extends TestBase {
 	
@@ -35,9 +35,9 @@ public class LoginPage extends TestBase {
 	public boolean validateLogoPresent() {
 		return logoImg.isDisplayed();
 	}
-	public SuccessPage login(String eml, String pwd) {
+	public HomePage login(String eml, String pwd) {
 		email.sendKeys(eml);
 		password.sendKeys(pwd);
-		return new SuccessPage();//return object of SuccessPages 
+		return new HomePage();//return object of SuccessPages 
 	}
 }

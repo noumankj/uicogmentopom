@@ -1,4 +1,4 @@
-package com.guru99.demo.base;
+package com.cogmento.ui.base;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import com.guru99.demo.utilities.PageWaitUtil;
+import com.cogmento.ui.utilities.PageWaitUtil;
 
 public class TestBase {
  
@@ -20,7 +20,7 @@ public class TestBase {
 		try {
 			prop= new Properties();
 			FileInputStream ip= new FileInputStream(
-					System.getProperty("user.dir")+"/src/main/java/com/guru99/demo/config"
+					System.getProperty("user.dir")+"/src/main/java/com/cogmento/ui/config"
 							+ "/config.properties");
 			prop.load(ip);
 			
@@ -34,10 +34,10 @@ public class TestBase {
 	public static void initialiazation() {
 		String browserName=prop.getProperty("browser");//reading property browser from config.properties
 	    if(browserName.equals("chrome")) {
-	    	System.setProperty("webdriver.chrome.driver", "D:\\Users\\MNoumanK\\eclipse-workspace\\demoguru99pom\\chromedriver.exe");
+	    	System.setProperty("webdriver.chrome.driver", "D:\\Users\\MNoumanK\\eclipse-workspace\\uicogmentopom\\chromedriver.exe");
 	    	driver = new ChromeDriver();
 	    }else if(browserName.equals("FF")) {
-	    	System.setProperty("webdriver.gecko.driver", "/demoguru99pom/geckodriver.exe");
+	    	System.setProperty("webdriver.gecko.driver", "/uicogmentopom/geckodriver.exe");
 	    	driver = new FirefoxDriver();
 	    }
 	    driver.manage().window().maximize();// auto maximizing windows according to screen size
