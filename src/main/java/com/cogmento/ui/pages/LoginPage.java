@@ -9,17 +9,23 @@ import com.cogmento.ui.base.TestBase;
 public class LoginPage extends TestBase {
 	
 	//Page Factory - Object Repository
-	@FindBy(id="email") //Finding email input field
+	@FindBy(name="email") //Finding email input field
 	WebElement email;
 	
-	@FindBy(name="passwd") //password input field
+	@FindBy(name="password") //password input field
 	WebElement password;
 	
-	@FindBy(name="SubmitLogin")//Sign-In button
-	WebElement signInButton;
+	@FindBy(xpath="//div[@class ='ui fluid large blue submit button']")//Sign-In button
+	WebElement loginButton;
 	
-	@FindBy(xpath="//img[@src='img/logo.png']")//finding logoImg
-	WebElement logoImg;
+	@FindBy(partialLinkText="password")
+	WebElement forgetPasswordLink;
+	
+	@FindBy(linkText="Sign Up")//Sign Up link redirects to Register Page
+	WebElement signUpLink;
+	
+	/*@FindBy(xpath="//img[@src='img/logo.png']")//finding logoImg
+	WebElement logoImg;*/
 	
 	//Initialization of Page Objects
 	public LoginPage() {
@@ -32,12 +38,22 @@ public class LoginPage extends TestBase {
 		return driver.getTitle();
 	   }
 	
-	public boolean validateLogoPresent() {
+	/*public boolean validateLogoPresent() {
 		return logoImg.isDisplayed();
-	}
+	}*/
 	public HomePage login(String eml, String pwd) {
 		email.sendKeys(eml);
 		password.sendKeys(pwd);
-		return new HomePage();//return object of SuccessPages 
+		loginButton.submit();//clicking on loginButton redirects to HomePage
+		return new HomePage();//return object of HomePage 
+	}
+	public ResetPasswordPage forgetPasswordLink() {
+		forgetPasswordLink.click();
+		return new ResetPasswordPage();
+		
+	}
+	public RegisterPage signUpLink() {
+		signUpLink.click();//clicking on signUpLink redirects to RegisterPage
+		return new RegisterPage();// return object of RegisterPage
 	}
 }
