@@ -15,38 +15,49 @@ public class HomePage  extends TestBase{
 	@FindBy(xpath="//div/span[@class='user-display']")//,contains(text,'User:Muhammad Nouman')]")
 	WebElement userNameLabel;
 	
-	@FindBy(xpath="//a[@href=\"/calendar\"]")//finding calendar link
+	//@FindBy(xpath="//a[@href=\"/calendar\"]")//finding calendar link
+	@FindBy(linkText="Calendar")
 	WebElement calendarLink;
 	
-	@FindBy(xpath="//a[@href=\"/contacts\"]")
-	WebElement contactsLink;
+	//@FindBy(xpath="//a[@href=\"/contacts\"]")
+	@FindBy(linkText="Contacts")
+	 WebElement contactsLink;
 	
-	@FindBy(xpath="//a[@href=\"/companies\"]")
-	WebElement companiesLink;
+	//@FindBy(xpath="//a[@href=\"/companies\"]")
+	@FindBy(linkText="Companies")
+	 WebElement companiesLink;
 	
-	@FindBy(xpath="//a[@href=\"/deals\"]")
-	WebElement dealsLink;
+	//@FindBy(xpath="//a[@href=\"/deals\"]")
+	@FindBy(linkText="Deals")
+	 WebElement dealsLink;
 	
-	@FindBy(xpath="//a[@href=\"/tasks\"]")
-	WebElement tasksLink;
+	//@FindBy(xpath="//a[@href=\"/tasks\"]")
+	@FindBy(linkText="Tasks")
+	 WebElement tasksLink;
 	
-	@FindBy(xpath="//a[@href=\"/cases\"]")
-	WebElement casesLink;
+	//@FindBy(xpath="//a[@href=\"/cases\"]")
+	@FindBy(linkText="Cases")
+	 WebElement casesLink;
 	
-	@FindBy(xpath="//a[@href=\"/calls\"]")
-	WebElement callsLink;
+	//@FindBy(xpath="//a[@href=\"/calls\"]")
+	@FindBy(linkText="Calls")
+	 WebElement callsLink;
 	
-	@FindBy(xpath="//a[@href=\"/documents\"]")
-	WebElement documentsLink;
+	//@FindBy(xpath="//a[@href=\"/documents\"]")
+	@FindBy(linkText="Documents")
+	 WebElement documentsLink;
 	
-	@FindBy(xpath="//a[@href=\"/email\"]")
-	WebElement emailLink;
+	//@FindBy(xpath="//a[@href=\"/email\"]")
+	@FindBy(linkText="Email")
+	 WebElement emailLink;
 	
-	@FindBy(xpath="//a[@href=\"/compaigns\"]")
-	WebElement compaignsLink;
+	//@FindBy(xpath="//a[@href=\"/compaigns\"]")
+	@FindBy(linkText="Compaigns")
+	 WebElement compaignsLink;
 	
-	@FindBy(xpath="//a[@href=\"/forms\"]")
-	WebElement formsLink;
+	//@FindBy(xpath="//a[@href=\"/forms\"]")
+	@FindBy(linkText="Forms")
+	 WebElement formsLink;
 	
 	
 	public HomePage() {
@@ -69,7 +80,7 @@ public class HomePage  extends TestBase{
 	}
 	
 	public TasksPage clickOnTasksLink() {
-		dealsLink.click();
+		tasksLink.click();
 		return new TasksPage();
 	}
 	

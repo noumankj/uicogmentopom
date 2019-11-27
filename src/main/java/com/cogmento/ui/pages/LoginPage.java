@@ -44,7 +44,7 @@ public class LoginPage extends TestBase {
 	public HomePage login(String eml, String pwd) {
 		email.sendKeys(eml);
 		password.sendKeys(pwd);
-		loginButton.submit();//clicking on loginButton redirects to HomePage
+		loginButton.click();//clicking on loginButton redirects to HomePage
 		return new HomePage();//return object of HomePage 
 	}
 	public ResetPasswordPage forgetPasswordLink() {
