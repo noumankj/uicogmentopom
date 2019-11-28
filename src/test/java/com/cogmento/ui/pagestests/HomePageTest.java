@@ -38,21 +38,32 @@ public class HomePageTest extends TestBase{
 		(prop.getProperty("username"), prop.getProperty("password"));//to reach homepage we have to login
 	   // loginPage.loginButton.submit();
 	}
+	///TestCases should be independent with each other
+	// before each  test case launch browser and login 
+	// and perform test and then close browser
 	
-	@Test()
+	
+	@Test(priority=1)
 	public void logoImageTest() {
 		boolean flag= homePage.validateLogoPresent();
 		Assert.assertTrue(flag);
 	}
-	@Test()
+	
+	@Test(priority=2)
+	public void verifyUserNameTest() {
+		boolean flag= homePage.verifyUserName();
+		Assert.assertTrue(flag);
+	}
+	
+	@Test(priority=3)
 	public void clickOnContactsLinkTest() {
 		contactsPage = homePage.clickOnContactsLink();
 	}
-	@Test()
+	@Test(priority=4)
 	public void clickOnDealsLinkTest() {
 		dealsPage = homePage.clickOnDealsLink();
 	}
-	@Test()
+	@Test(priority=5)
 	public void clickOnTasksLinkTest() {
 		tasksPage = homePage.clickOnTasksLink();
 	}

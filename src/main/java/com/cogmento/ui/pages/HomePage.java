@@ -69,6 +69,10 @@ public class HomePage  extends TestBase{
 	return logoImg.isDisplayed();
     }
 	
+	public boolean verifyUserName() {
+		return userNameLabel.isDisplayed();
+	}
+	
 	public ConactsPage clickOnContactsLink() {//clicking on ContactsPage
 		contactsLink.click();
 		return new ConactsPage();//returning contactsPage object,i.e landing on ContactsPage
