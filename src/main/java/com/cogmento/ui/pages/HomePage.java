@@ -60,6 +60,7 @@ public class HomePage  extends TestBase{
 	 WebElement formsLink;
 	
 	
+	
 	public HomePage() {
 		PageFactory.initElements(driver, this);
 	}
@@ -73,9 +74,11 @@ public class HomePage  extends TestBase{
 		return userNameLabel.isDisplayed();
 	}
 	
-	public ConactsPage clickOnContactsLink() {//clicking on ContactsPage
+	
+	
+	public ContactsPage clickOnContactsLink() {//clicking on ContactsPage
 		contactsLink.click();
-		return new ConactsPage();//returning contactsPage object,i.e landing on ContactsPage
+		return new ContactsPage();//returning contactsPage object,i.e landing on ContactsPage
 	}
 	
 	public DealsPage clickOnDealsLink() {

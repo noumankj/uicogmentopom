@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UI Cogmento CRM Automation" >
+       <test name="uicogmento automation testcases"> 
+       <classes>
+       		<class name="com.cogmento.ui.pagestests.LoginPageTest"></class>
+       		<class name="com.cogmento.ui.pagestests.HomePageTest"></class>
+       		<class name="com.cogmento.ui.pagestests.ContactsPageTest"></class>
+       </classes> 
+       </test>
+</suite>
+       

@@ -6,19 +6,21 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.cogmento.ui.base.TestBase;
-import com.cogmento.ui.pages.ConactsPage;
+import com.cogmento.ui.pages.ContactsPage;
 import com.cogmento.ui.pages.DealsPage;
 import com.cogmento.ui.pages.HomePage;
 import com.cogmento.ui.pages.LoginPage;
 import com.cogmento.ui.pages.RegisterPage;
 import com.cogmento.ui.pages.TasksPage;
+import com.cogmento.ui.utilities.TestUtilities;
 
 public class HomePageTest extends TestBase{
     LoginPage loginPage;
     HomePage homePage;
-    ConactsPage contactsPage;
+    ContactsPage contactsPage;
     DealsPage dealsPage;
     TasksPage tasksPage;
+    //TestUtilities testUtilities;
 	public HomePageTest() {
 		super();
 		
@@ -29,9 +31,10 @@ public class HomePageTest extends TestBase{
 		initialiazation();
 		loginPage = new LoginPage();//object initialization to access all funcitons
 		                                              //variables of LoginPage
-		contactsPage= new ConactsPage();
+		contactsPage= new ContactsPage();
 		dealsPage=new DealsPage();
 		tasksPage= new TasksPage();
+	//	testUtilities=new TestUtilities();
 		//homePage= new HomePage();
 		
 		homePage = loginPage.login
@@ -51,9 +54,11 @@ public class HomePageTest extends TestBase{
 	
 	@Test(priority=2)
 	public void verifyUserNameTest() {
+		//testUtilities.switchToFrame();
 		boolean flag= homePage.verifyUserName();
 		Assert.assertTrue(flag);
 	}
+
 	
 	@Test(priority=3)
 	public void clickOnContactsLinkTest() {
