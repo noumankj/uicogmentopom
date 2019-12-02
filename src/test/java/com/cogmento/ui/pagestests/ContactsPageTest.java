@@ -41,9 +41,13 @@ public class ContactsPageTest  extends  TestBase{
 	public void selectContactByNameTest() {
 		contactsPage.selectContactsByName("Mr Abdul Abdul");
 	}
-	
+	@Test(priority=4)
+	public void addNewContact() {
+		contactsPage.addNewContact();
+		
+	}
 	@AfterMethod()
 	public void tearDown() {
-		driver.quit();
+		//driver.quit();
 	}
 }

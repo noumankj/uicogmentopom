@@ -11,6 +11,10 @@ public class ContactsPage  extends TestBase{
 	@FindBy(xpath="//div[ contains(@class, 'ui header item mb5 light-black') and contains(text() ,'Contacts')]")
 	WebElement pageLabel;
 	
+	@FindBy(xpath="//button[contains(text(),'New')]")
+	WebElement addNewContact;
+	
+	
 	public ContactsPage() {
 		PageFactory.initElements(driver, this);
 	}
@@ -22,5 +26,9 @@ public class ContactsPage  extends TestBase{
 	public void selectContactsByName(String name) {
 		WebElement checkContactByName= driver.findElement(By.xpath("//td[contains(text(),'+ name +')])"));
 	      checkContactByName.click();
+	}
+	
+	public void addNewContact() {
+		addNewContact.click();
 	}
 }
