@@ -34,7 +34,7 @@ public class TestBase {
 	public static void initialiazation() {
 		String browserName=prop.getProperty("browser");//reading property browser from config.properties
 	    if(browserName.equals("chrome")) {
-	    	System.setProperty("webdriver.chrome.driver", "D:\\Users\\MNoumanK\\eclipse-workspace\\uicogmentopom\\chromedriver.exe");
+	    	System.setProperty("webdriver.chrome.driver", "D:\\Users\\mnoum\\Documents\\Github\\uicogmentopom\\chromedriver.exe");
 	    	driver = new ChromeDriver();
 	    }else if(browserName.equals("FF")) {
 	    	System.setProperty("webdriver.gecko.driver", "/uicogmentopom/geckodriver.exe");
