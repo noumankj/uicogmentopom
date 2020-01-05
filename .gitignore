@@ -11,5 +11,5 @@
 *.html
 *.png
 testng-results.xml
-LoginPageTest.xml
+#LoginPageTest.xml#
 Default test.xml
