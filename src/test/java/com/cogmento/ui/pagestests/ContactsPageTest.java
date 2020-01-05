@@ -3,6 +3,7 @@ package com.cogmento.ui.pagestests;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
@@ -10,17 +11,18 @@ import com.cogmento.ui.base.TestBase;
 import com.cogmento.ui.pages.ContactsPage;
 import com.cogmento.ui.pages.HomePage;
 import com.cogmento.ui.pages.LoginPage;
+import com.cogmento.ui.utilities.ExcelUtilities;
 public class ContactsPageTest  extends  TestBase{
 	ContactsPage contactsPage;
 	LoginPage loginPage;
 	HomePage homePage;
-    
+	String sheetName="Contacts";
 	public ContactsPageTest() {
 		super();
 	}
 	
 	@BeforeMethod()
-	public void setUp() {
+	public void setUp() throws InterruptedException{
 		initialiazation();
 		loginPage = new LoginPage();//object initialization to access all funcitons
 		                                              //variables of LoginPage
@@ -39,11 +41,23 @@ public class ContactsPageTest  extends  TestBase{
 	
 	@Test(priority=3)
 	public void selectContactByNameTest() {
-		contactsPage.selectContactsByName("Mr Abdul Abdul");
+		contactsPage.selectContactsByName("Mr Farhan Ali");
 	}
-	@Test(priority=4)
-	public void addNewContact() {
-		contactsPage.addNewContact();
+	
+	@DataProvider()
+	public Object[][] getCRMTestData(){
+			
+			Object data[][] = ExcelUtilities.getTestData(sheetName);//
+			return data;//return the complete data inside a particular sheet
+		}	
+	@Test(priority=4, dataProvider="getCRMTestData")
+	public void validateAddNewContact(String firstName, String lastName, String email, String company) {
+		try {
+			contactsPage.addNewContact(firstName,lastName,email,company);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 	@AfterMethod()

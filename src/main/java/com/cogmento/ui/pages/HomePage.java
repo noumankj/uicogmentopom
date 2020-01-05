@@ -79,6 +79,15 @@ public class HomePage  extends TestBase{
 	public ContactsPage clickOnContactsLink() {//clicking on ContactsPage
 		contactsLink.click();
 		return new ContactsPage();//returning contactsPage object,i.e landing on ContactsPage
+		
+		/*
+		 * to wait for the ContactLink to be visible, mouse hovering
+		 * Actions action = new Actions(driver);
+		*  action.moveToElement(contactsLink).build().perform();
+		*   newContactLink.click();
+		 * 
+		 */
+				
 	}
 	
 	public DealsPage clickOnDealsLink() {
