@@ -31,12 +31,18 @@
     <version>3.141.59</version>
    </dependency>
    
+
+   
    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
-   <dependency>
+<dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-chrome-driver</artifactId>
-    <version>3.141.59</version>
-   </dependency>
+    <version>4.0.0-rc-3</version>
+</dependency>
+   
+   
+   
+   
    
    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-edge-driver -->
    <dependency>
